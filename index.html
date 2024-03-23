@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sign Up</title>
+</head>
+<body>
+    <header id="side-background">
+        <div id="logo">
+            <img src="./crescent-star-star-logo.png" alt="logo">
+            <h1>C Star Star</h1>
+        </div>
+    </header>
+
+    <main>
+        <p class="description">
+            This is not a real online service!
+            You know you need something like this in your life to help you realize your deepest dreams.
+            Sign up now to get started.This is not a real online service!
+            You know you need something like this in your life to help you realize your deepest dreams.
+            Sign up now to get started.
+        </p>
+        <p class="description">You know you want to.</p>
+
+        <form action="#" method="get">
+            <section class="user-info">
+                <fieldset id="name">
+                    <div class="input-wrapper">
+                        <label for="first-name">First Name</label>
+                        <input type="text" name="first_name" id="first-name" class="input-field">
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" name="last_name" id="last-name" class="input-field">
+                    </div>
+                </fieldset>
+
+                <fieldset id="contact-info">
+                    <div class="input-wrapper">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" class="input-field" required>
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="phone-number">Phone Number</label>
+                        <input type="tel" name="phone_number" id="phone-number" class="input-field">
+                    </div>
+                </fieldset>
+
+                <fieldset id="password-setup">
+                    <div class="input-wrapper">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" class="input-field error" required>
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="confirm-password">Confirm Password</label>
+                        <input type="password" name="confirm_password" id="confirm-password" class="input-field error" required>
+                    </div>
+                </fieldset>
+            </section>
+
+            <button type="submit">Create Account</button>
+
+            <p>Already have an account? <a href="#" class="login">Log in</a></p>
+        </form>
+    </main>
+</body>
+</html>
