@@ -1,5 +1,17 @@
 
 
+@font-face {
+    font-family: Roboto;
+    src: url(./fonts/Roboto/Roboto-Regular.ttf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(./fonts/Roboto/Roboto-Bold.ttf);
+    font-weight: bold;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -44,4 +56,17 @@ main {
     position: relative;
     left: var(--side-background-width);
     width: calc(100vw - var(--side-background-width));
+    height: 100vh;
+    padding-left: 54px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.description {
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 1.5rem;
+    width: 52ch;
+    margin-bottom: calc(32px + 2.5rem);
 }
