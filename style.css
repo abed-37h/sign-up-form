@@ -126,3 +126,43 @@ label {
     border: 1px solid #00f;
     box-shadow: 3px 3px 4px 0 rgba(0, 0, 0, 0.2);
 }
+
+button {
+    margin-left: 54px;
+    margin-bottom: calc(32px + 1rem);
+    padding: 14px 48px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 3px 3px 4px 0 rgba(0, 0, 0, 0.2);
+    background-color: #596D48;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3e532d;
+}
+
+button:active {
+    box-shadow: none;
+}
+
+.login-prompt {
+    font-size: 1rem;
+}
+
+.login {
+    color: #596D48;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.login:visited {
+    color: #718a5c;
+}
+
+.login:hover {
+    color: #3e532d;
+}
