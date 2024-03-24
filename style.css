@@ -53,20 +53,76 @@ h1 {
 }
 
 main {
+    font-family: Roboto;
     position: relative;
     left: var(--side-background-width);
     width: calc(100vw - var(--side-background-width));
     height: 100vh;
-    padding-left: 54px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
+main > *,
+.user-info {
+    padding-left: 54px;
+}
+
 .description {
-    font-family: Roboto;
     font-weight: bold;
     font-size: 1.5rem;
     width: 52ch;
     margin-bottom: calc(32px + 2.5rem);
+}
+
+form {
+    padding-left: 0;
+}
+
+.user-info {
+    color: #3a3a3a;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 35vh;
+    box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.2);
+    margin-bottom: calc(28px + 1rem);
+}
+
+.caption {
+    font-weight: bold;
+    font-size: 1.5rem;;
+}
+
+fieldset {
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    width: min(100%, 600px);
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.15rem;
+}
+
+.input-field {
+    padding: 8px 12px;
+    height: 32px;
+    width: 260px;
+    border-radius: 4px;
+    border: 1px solid #E5E7EB;
+    font-size: 1rem;
+}
+
+.input-field:focus {
+    outline: none;
+    border: 1px solid #00f;
+    box-shadow: 3px 3px 4px 0 rgba(0, 0, 0, 0.2);
 }
