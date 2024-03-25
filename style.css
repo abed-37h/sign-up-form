@@ -93,7 +93,7 @@ main > *,
 .description {
     font-weight: bold;
     font-size: 1.5rem;
-    width: 52ch;
+    max-width: 54ch;
     margin-bottom: calc(32px + 2.5rem);
 }
 
@@ -106,7 +106,7 @@ form {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    height: calc(35vh + 15px);
+    min-height: calc(35vh + 15px);
     box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.2);
     margin-bottom: calc(28px + 1rem);
 }
@@ -120,6 +120,7 @@ fieldset {
     border: none;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     width: min(100%, 600px);
 }
 
