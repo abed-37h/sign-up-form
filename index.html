@@ -33,37 +33,37 @@
                 <fieldset id="name">
                     <div class="input-wrapper">
                         <label for="first-name">First Name</label>
-                        <input type="text" name="first_name" id="first-name" class="input-field">
+                        <input type="text" name="first_name" id="first-name" class="input-field" placeholder="John" pattern="[A-Z][a-z]*([_\s\-][A-Za-z][a-z]*)?" title="Must be capitalized and may contain 1 space, underscore or dash">
                     </div>
 
                     <div class="input-wrapper">
                         <label for="last-name">Last Name</label>
-                        <input type="text" name="last_name" id="last-name" class="input-field">
+                        <input type="text" name="last_name" id="last-name" class="input-field" placeholder="Smith" pattern="[A-Z][a-z]*([_\s\-][A-Za-z][a-z]*)?" title="Must be capitalized and may contain 1 space, underscore or dash">
                     </div>
                 </fieldset>
 
                 <fieldset id="contact-info">
                     <div class="input-wrapper">
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="email" class="input-field" required>
+                        <label for="email">Email<span title="required" aria-label="required"></span></label>
+                        <input type="email" name="email" id="email" class="input-field" placeholder="john.smith@example.com" required pattern="[a-z]+[_.\-]?[a-z]+@[a-z]{2,}\.[a-z]{2,}" title="Username must be of lowercase letters and numbers and may contain 1 dot, underscore or dash">
                     </div>
 
                     <div class="input-wrapper">
                         <label for="phone-number">Phone Number</label>
-                        <input type="tel" name="phone_number" id="phone-number" class="input-field">
+                        <input type="tel" name="phone_number" id="phone-number" class="input-field" placeholder="Phone number" title="Phone number">
                     </div>
                 </fieldset>
 
                 <fieldset id="password-setup">
                     <div class="input-wrapper">
-                        <label for="password">Password</label>
-                        <input type="password" name="password" id="password" class="input-field error" required>
+                        <label for="password">Password<span title="required" aria-label="required"></span></label>
+                        <input type="password" name="password" id="password" class="input-field error" placeholder="password" required minlength="8" pattern="[\w#\?\!@\$%\^&\*\-]{8,}" title="Can contain upper and lowercase letters, numbers and special characters (#?!@$ %^&*-)">
                         <span></span>
                     </div>
 
                     <div class="input-wrapper">
-                        <label for="confirm-password">Confirm Password</label>
-                        <input type="password" name="confirm_password" id="confirm-password" class="input-field error" required>
+                        <label for="confirm-password">Confirm Password<span title="required" aria-label="required"></span></label>
+                        <input type="password" name="confirm_password" id="confirm-password" class="input-field error" placeholder="password" required minlength="8" pattern="[\w#\?\!@\$%\^&\*\-]{8,}" title="Can contain upper and lowercase letters, numbers and special characters (#?!@$ %^&*-)">
                     </div>
                 </fieldset>
             </section>
